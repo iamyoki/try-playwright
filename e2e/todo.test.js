@@ -1,9 +1,5 @@
 const { test, expect } = require('@playwright/test')
 
-test.use({
-  headless: false
-})
-
 test.describe('todo page', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('.')
